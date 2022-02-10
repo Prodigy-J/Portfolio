@@ -1,0 +1,73 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+}
+
+.inlineList {
+    display: none;
+}
+
+.hamburger {
+margin-top: 5px;
+padding-top: 1px;
+flex-grow: 0;
+height: 36px;
+margin-right: 5px;
+transition: all 0.2s ease;
+}
+
+.hamburger:hover {
+border: 2px solid #000;
+cursor: pointer;
+background-color: #000;
+}
+
+.bar {
+display: block;
+margin: 5px;
+width: 30px;
+height: 3px;
+background-color: #fff;
+transition: all 0.2s ease;
+}
+
+@media screen and (min-width: 950px) {
+    
+    .header {
+        min-width: 850px;
+        padding: 15px 50px;
+    }
+
+    .h3 {
+        margin: 0;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .inlineList {
+        margin: 0;
+        font-weight: 300;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-grow: .4;
+        color: rgb(255, 255, 255);
+    }
+
+    .inlineList li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

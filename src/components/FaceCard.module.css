@@ -1,0 +1,92 @@
+
+.faceCard {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20vh;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faceCardImg {
+    margin: auto;
+    border-radius: 50%;
+    width: 50px;
+    width: 150px;
+    height: 190px;
+}
+
+.faceCardTextDiv {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.p {
+    font-size: 12px;
+    font-weight: 100px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 950px) {
+
+    .faceCard {
+        min-width: 850px;
+        margin: auto;
+        margin-top: 70px;
+        width: 70%;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, .6);
+        border-radius: 15px;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .faceCardImg {
+        min-width: 23%;
+        margin-left: 15px;
+        border-radius: 10px;
+        width: 220px;
+        height: 100%;
+    }
+
+    .faceCardTextDiv {
+        margin-bottom: 50px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: .60;
+        color: #f8f8f8;
+    }
+
+    .h1 {
+        font-weight: 800;
+        font-size: 350%;
+        letter-spacing: 2px;
+    }
+
+    .p {
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
