@@ -3,7 +3,7 @@
     background: rgba(255, 255, 255, 0.04);
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .6);
     border-radius: 15px;
-    padding: 25px;
+    padding: 20px;
     margin: auto;
     margin-top: 50px;
     width: 80%;
@@ -17,9 +17,8 @@
 .faceCardImg {
     margin: auto;
     border-radius: 50%;
-    width: 50px;
-    width: 150px;
-    height: 190px;
+    width: 140px;
+    height: 200px;
 }
 
 .faceCardTextDiv {
@@ -37,7 +36,7 @@
 }
 
 .p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 100px;
     line-height: 20px;
 }
