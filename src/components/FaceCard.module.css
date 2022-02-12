@@ -3,11 +3,11 @@
     background: rgba(255, 255, 255, .04);
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .6);
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
     margin-top: 50px;
     width: 80%;
-    height: 350px;
+    height: 320px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,9 +17,8 @@
 .faceCardImg {
     margin: auto;
     border-radius: 50%;
-    width: 50px;
-    width: 150px;
-    height: 190px;
+    width: 140px;
+    height: 200px;
 }
 
 .faceCardTextDiv {
@@ -32,12 +31,12 @@
 
 .h1 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
 .p {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 100px;
     line-height: 20px;
 }
