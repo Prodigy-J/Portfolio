@@ -40,7 +40,7 @@
     display: block;
     top: 57px;
     right: 0;
-    width: 30%;
+    width: 40%;
     height: 100%;
     padding: 0;
     display: flex;
@@ -57,13 +57,14 @@
     }
 
     to {
-        width: 30%;
+        width: 40%;
     }
 }
 
 .active li {
     list-style: none;
-    padding: 10px;
+    padding: 15px;
+    font-weight: 100px;
 }
 
 .isActive .bar:nth-child(2) {
