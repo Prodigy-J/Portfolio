@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './Header.module.css';
 
 export default function Header(props) {
@@ -12,16 +13,19 @@ export default function Header(props) {
         setMenuOpen(!menuOpen);
         hamburger.classList.toggle('is-active');
         list.classList.toggle(`${classes.active}`);
-        hamburger.classList.toggle(`${classes.isActive}`)
-        console.log(list)
+        hamburger.classList.toggle(`${classes.isActive}`);
     }
     
     return (
         <header className={classes.header}>
             <h3 className={classes.h3}>&lt; jerome n tokpa /&gt;</h3>
             <ul className={classes.inlineList}>
-                <li>home</li>
-                <li>projects</li>
+                <li>
+                    <Link className={classes.link} to="/">home</Link>
+                </li>
+                <li>
+                    <Link className={classes.link} to="/projects">projects</Link>
+                </li>
                 <li>blog</li>
                 <li>about</li>
                 <li>contact</li>
