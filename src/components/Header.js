@@ -26,9 +26,10 @@ export default function Header(props) {
                 <li>
                     <Link className={classes.link} to="/projects">projects</Link>
                 </li>
-                <li>blog</li>
                 <li>about</li>
-                <li>contact</li>
+                <li>
+                    <Link className={classes.link} to="/contact">contact</Link>
+                </li>
             </ul>
             <div id='hamburger' onClick={toggleMenu} className={classes.hamburger}>
                 <span id='bar1' className={classes.bar}></span>

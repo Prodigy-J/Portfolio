@@ -1,9 +1,7 @@
 
-* {
-    color: #f8f8f8;
-}
 
 .footer {
+    color: #f8f8f8;
     background-color: rgba(65, 65, 65, 0.8);
     margin-top: 20px;
     width: 100%;
@@ -19,6 +17,7 @@
 }
 
 .inlineList {
+    color: #f8f8f8;
     margin-bottom: 10px;
     list-style: none;
     display: flex;
@@ -28,6 +27,10 @@
 
 .inlineList li {
     margin: 0 20px;
+}
+
+.whiteLink {
+    color: #f8f8f8;
 }
 
 @media only screen and (min-width: 950px) {
@@ -46,5 +49,9 @@
         flex-grow: .3;
         list-style: none;
         font-size: 20px;
+    }
+
+    .whiteLink {
+        color: #f8f8f8;
     }
 }

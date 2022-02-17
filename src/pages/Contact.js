@@ -1,14 +1,14 @@
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import FaceCard from '../components/FaceCard';
+import Form from '../components/Form';
 
-export default function Home(props) {
+export default function Contact() {
     return (
         <div>
             <Header />
-            <FaceCard />
+            <Form />
             <Footer />
         </div>
-    );
+    )
 }

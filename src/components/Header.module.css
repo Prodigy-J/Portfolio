@@ -8,8 +8,13 @@
     padding: 8px 16px;
 }
 
+.h3 {
+    color: #f8f8f8;
+}
+
 .link {
     text-decoration: none;
+    color: #f8f8f8;
 }
 
 .inlineList {
@@ -116,6 +121,10 @@
     .inlineList li:hover {
         text-decoration: underline;
         cursor: pointer;
+    }
+
+    .link {
+        color: #f8f8f8;
     }
     
 }
