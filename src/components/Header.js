@@ -26,7 +26,9 @@ export default function Header(props) {
                 <li>
                     <Link className={classes.link} to="/projects">projects</Link>
                 </li>
-                <li>about</li>
+                <li>
+                    <Link className={classes.link} to="/about">about</Link>
+                </li>
                 <li>
                     <Link className={classes.link} to="/contact">contact</Link>
                 </li>

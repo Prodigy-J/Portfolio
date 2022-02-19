@@ -5,12 +5,20 @@ import Project from "../components/Project";
 
 export default function Projects() {
 
-    const styles = {
-        height: '85vh',
+    const mobile = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: '20%'
+    }
+
+    const deskTop = {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '5%'
     }
 
     const projects = [
@@ -22,7 +30,7 @@ export default function Projects() {
     return (
         <div>
             <Header />
-            <div style={styles}>
+            <div style={window.screen.width >= 950 ? deskTop : mobile}>
                 {projects}
             </div>
             <Footer />
