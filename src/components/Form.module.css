@@ -11,6 +11,20 @@
     flex-direction: column;
 }
 
+.notificationDiv {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    display: none;
+}
+
+.closeButton {
+    margin-right: 15px;
+    float: right;
+    cursor: pointer;
+}
+
 .flexContainer {
     height: 105px;
     display: flex;
