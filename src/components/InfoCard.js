@@ -7,16 +7,16 @@ export default function InfoCard() {
             <img className={classes.avatar} src={require('../images/UMFR4056.JPG')} alt="my-avatar" />
             <h2 className={classes.h2}>JEROME N. TOKPA</h2>
             <p className={classes.p}>
-            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Hello there 👋🏾, I am Jerome. I love building software and delivering the best apps. 💻
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            I'm currently going deep into ReactJS ⚛ technology and as a matter of fact, this site was built with React. If you were looking for me in a very large crowd, finding me will be easy. Just look for the guy who stares at his computer for hours without blinking 😂.
             <br /><br />
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+            Jokes aside, I'm available for hire. If you want to build, modify or manage your website, I'm hear to give a hand. Expect from me a responsive mobile-first website that's easy to navigate by your visitors. 🤼
             <br /><br />
-            Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+            Thank you for visiting my site. Hope you have a great day. 🙏🏾
             </p>
             <button className={classes.downloadBtn}>
-                <span class="iconify" data-icon="fa:download"></span> download cv
+                <span className="iconify" data-icon="fa:download"></span> download cv
             </button>
         </div>
     );

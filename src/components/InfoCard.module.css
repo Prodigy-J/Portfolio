@@ -46,6 +46,7 @@
     padding: 10px;
     width: 70%;
     min-width: 100px;
+    max-width: 150px;
     font-size: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -106,6 +107,7 @@
         padding: 10px;
         width: 10%;
         min-width: 100px;
+        max-width: 150px;
         font-size: 15px;
         display: flex;
         justify-content: space-evenly;
@@ -113,6 +115,7 @@
         font-weight: 500;
         position: absolute;
         right: 18%;
+        bottom: 25%;
         margin-top: 20px;
         transition: all 0.1s ease;
     }
