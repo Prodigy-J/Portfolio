@@ -11,7 +11,7 @@ export default function InfoCard() {
             <br /><br />
             I'm currently going deep into ReactJS ⚛ technology and as a matter of fact, this site was built with React. If you were looking for me in a very large crowd, finding me will be easy. Just look for the guy who stares at his computer for hours without blinking 😂.
             <br /><br />
-            Jokes aside, I'm available for hire. If you want to build, modify or manage your website, I'm hear to give a hand. Expect from me a responsive mobile-first website that's easy to navigate by your visitors. 🤼
+            Jokes aside, I'm available for hire. If you want to build, modify or manage your website, I'm here to give a hand. Expect from me a responsive mobile-first website that's easy to navigate by your visitors. 🤼
             <br /><br />
             Thank you for visiting my site. Hope you have a great day. 🙏🏾
             </p>
