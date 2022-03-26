@@ -20,7 +20,6 @@ export default function Form() {
     };
 
     const [sentSuccessful, setSentSucessful] = useState(false);
-    
     const [show, setShow] = useState(false);
 
     const [toSend, setToSend] = useState({
@@ -31,25 +30,36 @@ export default function Form() {
 
     const onSubmit = e => {
         e.preventDefault();
-        send(
-            'service_2gwn8bh',
-            'template_ry8lief',
-            toSend,
-            'user_xfgsmwJQfhLRQFzI1wd9r'
-        )
-        .then((response) => {
-            setSentSucessful(true);
-            setShow(true);
-            setToSend({
-                from_name: '',
-                from_email: '',
-                message: '',
+
+        console.log(e.target.children[0].children[0].classList)
+        e.target.children[0].children[0].classList.toggle(`${classes.errorBg}`)
+        console.log(e.target.children[0].children[0].classList)
+
+        e.target.children[2].disabled = true;
+        
+        if (false) {
+            send(
+                'service_2gwn8bh',
+                'template_ry8lief',
+                toSend,
+                'user_xfgsmwJQfhLRQFzI1wd9r'
+            )
+            .then((response) => {
+                setSentSucessful(true);
+                setShow(true);
+                e.target.children[2].disabled = false;
+                setToSend({
+                    from_name: '',
+                    from_email: '',
+                    message: '',
+                });
+            })
+            .catch(err => {
+                setSentSucessful(false);
+                setShow(true);
+                e.target.children[2].disabled = false;
             });
-        })
-        .catch(err => {
-            setSentSucessful(false);
-            setShow(true);
-        });
+        }
     };
 
     const handleChange = e => {
@@ -65,7 +75,7 @@ export default function Form() {
 
     return (
         <>{ show &&
-        <div id='notification' className={classes.notificationDiv} style = {sentSuccessful ? successStyle : failureStyle}>{sentSuccessful? "Your message was sent" : "Message failed to sent"}<span className={classes.closeButton} onClick={close}>x</span></div> }
+        <div id='notification' className={classes.notificationDiv} style = {sentSuccessful ? successStyle : failureStyle}>{sentSuccessful ? "Your message was sent" : "Your message failed to sent"}<span className={classes.closeButton} onClick={close}>x</span></div> }
         <form className={classes.form} onSubmit={onSubmit}>
             <div className={classes.flexContainer}>
                 <input 
@@ -92,7 +102,7 @@ export default function Form() {
                 value={toSend.message}
                 onChange={handleChange}
             ></textarea>
-            <button className={classes.button} onClick={onSubmit}> 
+            <button className={classes.button}> 
             <span className="iconify" data-icon="fa:paper-plane"></span> 
                 send
             </button>

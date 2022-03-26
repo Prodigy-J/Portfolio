@@ -15,9 +15,6 @@ export default function InfoCard() {
             <br /><br />
             Thank you for visiting my site. Hope you have a great day. 🙏🏾
             </p>
-            <button className={classes.downloadBtn}>
-                <span className="iconify" data-icon="fa:download"></span> download cv
-            </button>
         </div>
     );
 }
