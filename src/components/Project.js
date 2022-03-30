@@ -1,10 +1,13 @@
 import React from "react";
 import classes from "./Project.module.css";
 
-export default function Project() {
+export default function Project(props) {
     return (
-        <div className={classes.projectDiv}>
-            <h4 className={classes.h4}>Project not available yet</h4>
-        </div>
+        <a href={props.link} className={classes.link} target="blank">
+            <div className={classes.projectDiv}>
+                <img src={props.image} alt={props.desc} className={classes.imag} />
+                <h4 className={classes.h4}>{props.desc}</h4>
+            </div>
+        </a>
     );
 }

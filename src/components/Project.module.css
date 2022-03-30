@@ -6,13 +6,24 @@
     background: rgba(230, 230, 230, 0.8);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.imag {
+    margin: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+    border-radius: 8px 8px 0 0;
 }
 
 .h4 {
+    text-align: center;
+    margin-top: 22px;
     color: rgb(0, 107, 36);
+}
+
+.link {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 950px) {
@@ -23,5 +34,23 @@
         background: rgba(230, 230, 230, 0.8);
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
         border-radius: 15px;
+    }
+
+    .imag {
+        margin: 0;
+        width: 100%;
+        height: 80%;
+        object-fit: fill;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .h4 {
+        text-align: center;
+        margin-top: 22px;
+        color: rgb(0, 107, 36);
+    }
+    
+    .link {
+        text-decoration: none;
     }
 }

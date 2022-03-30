@@ -46,7 +46,7 @@
 @media only screen and (min-width: 950px) {
 
     .faceCard {
-        min-width: 850px;
+        min-width: 350px;
         margin: auto;
         margin-top: 70px;
         width: 70%;

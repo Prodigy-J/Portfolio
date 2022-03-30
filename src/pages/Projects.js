@@ -5,32 +5,18 @@ import Project from "../components/Project";
 
 export default function Projects() {
 
-    const mobile = {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: '20%'
-    }
-
-    const deskTop = {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: '5%'
-    }
-
     const projects = [
-        <Project />,
-        <Project />,
-        <Project />
+        <Project 
+            key='1' 
+            image="https://thumbs.dreamstime.com/b/jet-plane-icon-jet-plane-icon-blue-white-background-120405606.jpg" desc="the-travel-guide-website"
+            link="https://the-traveler-guide.netlify.app/"
+        />
     ];
 
     return (
         <div>
             <Header />
-            <div style={window.screen.width >= 950 ? deskTop : mobile}>
+            <div className="proj-container">
                 {projects}
             </div>
             <Footer />
