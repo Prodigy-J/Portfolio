@@ -24,7 +24,7 @@ export default function Header(props) {
                     <Link className={classes.link} to="/">home</Link>
                 </li>
                 <li>
-                    <a className={classes.link} href="https://jerome.pythonanywhere.com/" target="blank">blog</a>
+                    <a className={classes.link} href="https://jerome-tokpa.hashnode.dev/" target="blank">blog</a>
                 </li>
                 <li>
                     <Link className={classes.link} to="/projects">projects</Link>
